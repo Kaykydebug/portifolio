@@ -1,9 +1,11 @@
+
 <!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portfólio | Kayky Andrade</title>
+
 <style>
 :root {
   --site-primary: #168BFF;
@@ -14,8 +16,6 @@
   --site-on-background: #172033;
   --site-font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --site-font-heading: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --site-heading-scale: 1;
-  --site-spacing-scale: 1;
   --site-radius-scale: 1;
   --site-decoration-opacity: 1;
   --surface: #FFFFFF;
@@ -24,182 +24,1008 @@
   --line: #D7DFEC;
   color-scheme: light;
 }
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; font-family: var(--site-font-body); background: var(--site-background); color: var(--site-on-background); }
-.site-root { min-height: 100vh; background-color: var(--site-background); color: var(--site-on-background); border-radius: 0; overflow: hidden; }
+
+body {
+  margin: 0;
+  font-family: var(--site-font-body);
+  background: var(--site-background);
+  color: var(--site-on-background);
+}
+
+.site-root {
+  min-height: 100vh;
+  background: var(--site-background);
+  color: var(--site-on-background);
+  overflow: hidden;
+}
+
 a { color: inherit; text-decoration: none; }
 button, a { -webkit-tap-highlight-color: transparent; }
-.wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
-header { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--site-background) 88%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
-.nav { display: flex; align-items: center; justify-content: space-between; min-height: 74px; gap: 20px; }
-.brand { display: flex; align-items: center; gap: 11px; font-weight: 800; letter-spacing: -.04em; }
-.brand-mark { width: 38px; height: 38px; display: grid; place-items: center; color: var(--site-on-primary); background: var(--site-primary); border-radius: calc(13px * var(--site-radius-scale)); font-weight: 900; }
-.nav-links { display: flex; gap: 26px; align-items: center; color: var(--text-muted); font-size: 14px; }
+
+.wrap {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #F6F7FBEF;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 74px;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  color: var(--site-on-primary);
+  background: var(--site-primary);
+  border-radius: 13px;
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
 .nav-links a:hover, .text-link:hover { color: var(--site-primary); }
-.nav-cta { color: var(--site-on-primary) !important; background: var(--site-primary); padding: 11px 16px; border-radius: calc(12px * var(--site-radius-scale)); font-weight: 700; }
-.hero { position: relative; padding: 94px 0 76px; overflow: hidden; }
-.hero::before { content: ""; position: absolute; width: 420px; height: 420px; right: -100px; top: 20px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--site-primary) 22%, transparent), transparent 70%); opacity: var(--site-decoration-opacity); pointer-events: none; }
-.hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 54px; align-items: center; position: relative; }
-.eyebrow { display: inline-flex; align-items: center; gap: 9px; padding: 8px 12px; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; font-size: 12px; color: var(--text-muted); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: #26B98A; box-shadow: 0 0 0 4px color-mix(in srgb, #26B98A 15%, transparent); }
-h1,h2,h3,p { margin-top: 0; }
-h1 { font-family: var(--site-font-heading); font-size: clamp(42px, 6vw, 72px); line-height: 1.02; letter-spacing: -.065em; margin: 24px 0; max-width: 720px; }
+
+.nav-cta {
+  color: white !important;
+  background: var(--site-primary);
+  padding: 11px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.hero {
+  position: relative;
+  padding: 94px 0 76px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -100px;
+  top: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #168BFF38, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 54px;
+  align-items: center;
+  position: relative;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 999px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #26B98A;
+  box-shadow: 0 0 0 4px #26B98A26;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1 {
+  font-family: var(--site-font-heading);
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -.065em;
+  margin: 24px 0;
+  max-width: 720px;
+}
+
 .gradient { color: var(--site-primary); }
-.lead { color: var(--text-muted); font-size: 18px; line-height: 1.8; max-width: 610px; margin-bottom: 30px; }
+
+.lead {
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 610px;
+  margin-bottom: 30px;
+}
+
 .actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 18px; border-radius: calc(13px * var(--site-radius-scale)); font-weight: 750; font-size: 14px; border: 1px solid var(--line); transition: transform .2s, border-color .2s; cursor: pointer; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 18px;
+  border-radius: 13px;
+  font-weight: 750;
+  font-size: 14px;
+  border: 1px solid var(--line);
+  transition: transform .2s, border-color .2s;
+  cursor: pointer;
+}
+
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--site-primary); color: var(--site-on-primary); border-color: var(--site-primary); }
+
+.btn-primary {
+  background: var(--site-primary);
+  color: white;
+  border-color: var(--site-primary);
+}
+
 .btn-secondary { background: var(--surface); }
-.hero-card { position: relative; padding: 26px; background: var(--site-secondary); color: var(--site-on-secondary); border-radius: calc(28px * var(--site-radius-scale)); box-shadow: 0 28px 70px #111a3326; transform: rotate(1deg); }
-.profile-panel { display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: calc(28px * var(--site-radius-scale)); box-shadow: 0 28px 70px #111a3312; text-align: center; }
-.profile-photo-placeholder { width: 176px; height: 176px; display: grid; place-items: center; border-radius: 50%; border: 5px solid var(--surface-soft); background: linear-gradient(145deg, #DCEEFF, #F5F9FF); color: var(--site-primary); font-size: 46px; font-weight: 850; letter-spacing: -.06em; overflow: hidden; }
-.profile-photo { width: 100%; height: 100%; object-fit: cover; }
-.profile-panel h2 { font-size: 24px; margin: 0; letter-spacing: -.04em; }
-.profile-role { color: var(--text-muted); font-size: 14px; line-height: 1.6; margin: 0; }
-.profile-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; }
-.profile-tags span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 11px; color: var(--text-muted); font-weight: 700; }
-.code-top { display: flex; gap: 7px; margin-bottom: 24px; }
-.code-top i { width: 9px; height: 9px; border-radius: 50%; background: #F17E7E; }
-.code-top i:nth-child(2) { background: #F6C76A; }.code-top i:nth-child(3) { background: #5AD3A3; }
-.code-line { font: 13px/2.05 ui-monospace, SFMono-Regular, Menlo, monospace; color: #CAD4F0; white-space: nowrap; }
-.code-line .purple { color: #83C5FF; }.code-line .green { color: #78E3B8; }.code-line .yellow { color: #FFD68A; }
-.card-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 22px; padding-top: 16px; border-top: 1px solid #ffffff24; color: #C1C9E0; font-size: 12px; }
+
+.profile-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 28px 70px #111a3312;
+  text-align: center;
+}
+
+.profile-photo-placeholder {
+  width: 176px;
+  height: 176px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 5px solid var(--surface-soft);
+  background: linear-gradient(145deg, #DCEEFF, #F5F9FF);
+  color: var(--site-primary);
+  font-size: 46px;
+  font-weight: 850;
+  overflow: hidden;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-panel h2 {
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: -.04em;
+}
+
+.profile-role {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7px;
+}
+
+.profile-tags span {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
 section { padding: 76px 0; }
-.section-head { max-width: 680px; margin-bottom: 32px; }
-.kicker { color: var(--site-primary); font-weight: 800; text-transform: uppercase; font-size: 12px; letter-spacing: .14em; margin-bottom: 12px; }
-h2 { font-size: clamp(30px, 4vw, 44px); letter-spacing: -.05em; line-height: 1.12; margin-bottom: 14px; }
-.section-desc { color: var(--text-muted); line-height: 1.75; font-size: 16px; margin-bottom: 0; }
-.about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 22px; }
-.about-panel, .skill-panel, .project-card, .contact-card { background: var(--surface); border: 1px solid var(--line); border-radius: calc(22px * var(--site-radius-scale)); padding: 28px; }
+
+.section-head {
+  max-width: 680px;
+  margin-bottom: 32px;
+}
+
+.kicker {
+  color: var(--site-primary);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .14em;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  letter-spacing: -.05em;
+  line-height: 1.12;
+  margin-bottom: 14px;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 22px;
+}
+
+.about-panel, .skill-panel, .project-card, .contact-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px;
+}
+
 .about-panel { background: var(--surface-soft); }
-.big-quote { font-size: 22px; font-weight: 750; letter-spacing: -.035em; line-height: 1.45; }
+
+.big-quote {
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -.035em;
+  line-height: 1.45;
+}
+
 .about-panel p:last-child, .about-copy p:last-child { margin-bottom: 0; }
+
 .about-copy { color: var(--text-muted); line-height: 1.85; }
-.stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 24px; }
-.stat { padding: 15px; border: 1px solid var(--line); background: var(--surface); border-radius: calc(14px * var(--site-radius-scale)); }
-.stat strong { display: block; font-size: 19px; margin-bottom: 5px; }.stat span { font-size: 12px; color: var(--text-muted); }
-.skills-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.stat {
+  padding: 15px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 14px;
+}
+
+.stat strong { display: block; font-size: 19px; margin-bottom: 5px; }
+.stat span { font-size: 12px; color: var(--text-muted); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
 .skill-panel { padding: 22px; }
-.skill-icon { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: var(--surface-soft); color: var(--site-primary); font-size: 20px; margin-bottom: 18px; font-weight: 800; }
-.skill-panel h3 { font-size: 16px; margin-bottom: 8px; }.skill-panel p { color: var(--text-muted); font-size: 13px; line-height: 1.65; margin-bottom: 0; }
-.pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.pill { font-size: 11px; padding: 7px 9px; border-radius: 999px; background: var(--surface-soft); color: var(--text-muted); font-weight: 700; }
-.projects { background: color-mix(in srgb, var(--surface-soft) 45%, var(--site-background)); }
-.project-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
+
+.skill-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--surface-soft);
+  color: var(--site-primary);
+  font-size: 20px;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.skill-panel h3 { font-size: 16px; margin-bottom: 8px; }
+
+.skill-panel p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.pill {
+  font-size: 11px;
+  padding: 7px 9px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+.projects {
+  background: #EDF4FC;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
 .project-card { padding: 0; overflow: hidden; }
-.project-art { min-height: 190px; padding: 24px; background: var(--site-secondary); color: white; position: relative; display: flex; align-items: end; overflow: hidden; }
-.project-art::before { content: ""; position: absolute; width: 210px; height: 210px; right: -30px; top: -55px; border: 1px solid #ffffff35; border-radius: 42px; transform: rotate(35deg); box-shadow: 0 0 0 24px #ffffff08, 0 0 0 48px #ffffff06; }
-.project-art.alt { background: linear-gradient(130deg, #123D72, #168BFF); }
-.project-label { position: relative; z-index: 1; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #D4D0FF; font-weight: 800; }
-.project-body { padding: 24px; }.project-body h3 { font-size: 21px; letter-spacing: -.03em; margin-bottom: 10px; }.project-body p { color: var(--text-muted); font-size: 14px; line-height: 1.75; }
-.project-links { display: flex; gap: 18px; font-size: 13px; font-weight: 800; margin-top: 18px; }.text-link { color: var(--site-primary); }
-.project-note { font-size: 12px !important; padding-top: 12px; border-top: 1px solid var(--line); }
-.learning-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.learning-item { display: flex; gap: 15px; padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: calc(16px * var(--site-radius-scale)); }
-.learning-num { flex: 0 0 36px; height: 36px; display: grid; place-items: center; background: var(--surface-soft); border-radius: 11px; color: var(--site-primary); font-weight: 900; }
-.learning-item h3 { font-size: 15px; margin-bottom: 6px; }.learning-item p { color: var(--text-muted); font-size: 13px; line-height: 1.6; margin-bottom: 0; }
+
+.project-art {
+  min-height: 190px;
+  padding: 24px;
+  background: var(--site-secondary);
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+}
+
+.project-art::before {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  right: -30px;
+  top: -55px;
+  border: 1px solid #ffffff35;
+  border-radius: 42px;
+  transform: rotate(35deg);
+  box-shadow: 0 0 0 24px #ffffff08, 0 0 0 48px #ffffff06;
+}
+
+.project-art.alt {
+  background: linear-gradient(130deg, #123D72, #168BFF);
+}
+
+.project-label {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #D4D0FF;
+  font-weight: 800;
+}
+
+.project-body { padding: 24px; }
+
+.project-body h3 {
+  font-size: 21px;
+  letter-spacing: -.03em;
+  margin-bottom: 10px;
+}
+
+.project-body p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 18px;
+}
+
+.text-link { color: var(--site-primary); }
+
+.project-note {
+  font-size: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.learning-item {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.learning-num {
+  flex: 0 0 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: var(--surface-soft);
+  border-radius: 11px;
+  color: var(--site-primary);
+  font-weight: 900;
+}
+
+.learning-item h3 { font-size: 15px; margin-bottom: 6px; }
+
+.learning-item p {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 .experience-list { display: grid; gap: 16px; }
-.experience-card { padding: 25px 28px; background: var(--surface); border: 1px solid var(--line); border-radius: calc(18px * var(--site-radius-scale)); }
-.experience-top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 12px; }
+
+.experience-card {
+  padding: 25px 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
 .experience-top h3 { font-size: 18px; margin: 0 0 5px; }
-.experience-company { color: var(--site-primary); font-weight: 750; font-size: 14px; }
+
+.experience-company {
+  color: var(--site-primary);
+  font-weight: 750;
+  font-size: 14px;
+}
+
 .experience-date { color: var(--text-muted); font-size: 13px; }
-.experience-card p { color: var(--text-muted); font-size: 14px; line-height: 1.75; margin: 0; }
-.contact-card { display: flex; align-items: center; justify-content: space-between; gap: 28px; background: var(--site-secondary); color: var(--site-on-secondary); padding: 38px; }
-.contact-card p { color: #C1C9E0; line-height: 1.7; margin-bottom: 0; max-width: 570px; }
-.contact-card h2 { margin-bottom: 12px; }.contact-card .btn-secondary { background: white; color: #172033 !important; border-color: white; white-space: nowrap; font-weight: 800; }
-footer { padding: 24px 0; border-top: 1px solid var(--line); color: var(--text-muted); font-size: 12px; }
-.footer-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.edit-note { margin-top: 22px; color: var(--text-muted); font-size: 12px; line-height: 1.6; }
-@media (max-width: 800px) { .hero-grid, .about-grid { grid-template-columns: 1fr; }.hero { padding-top: 64px; }.hero-card, .profile-panel { max-width: 520px; transform: none; }.skills-grid { grid-template-columns: repeat(2,1fr); }.contact-card { align-items: start; flex-direction: column; }.nav-links { gap: 14px; }.nav-links a:not(.nav-cta) { display: none; } }
-@media (max-width: 560px) { .wrap { width: min(100% - 28px, 1120px); }.hero { padding: 50px 0 36px; } section { padding: 54px 0; }.lead { font-size: 16px; }.skills-grid, .project-grid, .learning-grid { grid-template-columns: 1fr; }.stats { grid-template-columns: 1fr; }.about-panel, .skill-panel { padding: 22px; }.contact-card { padding: 26px; }.code-line { font-size: 11px; }.nav { min-height: 64px; } }
+
+.experience-card p {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: var(--site-secondary);
+  color: white;
+  padding: 38px;
+}
+
+.contact-card p {
+  color: #C1C9E0;
+  line-height: 1.7;
+  margin-bottom: 0;
+  max-width: 570px;
+}
+
+.contact-card h2 { margin-bottom: 12px; }
+
+.contact-card .btn-secondary {
+  background: white;
+  color: #172033 !important;
+  border-color: white;
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .hero-grid, .about-grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 64px; }
+  .profile-panel { max-width: 520px; }
+  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-card { align-items: start; flex-direction: column; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+}
+
+@media (max-width: 560px) {
+  .wrap { width: min(calc(100% - 28px), 1120px); }
+  .hero { padding: 50px 0 36px; }
+  section { padding: 54px 0; }
+  .lead { font-size: 16px; }
+  .skills-grid, .project-grid, .learning-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr; }
+  .about-panel, .skill-panel { padding: 22px; }
+  .contact-card { padding: 26px; }
+  .nav { min-height: 64px; }
+}
 </style>
 </head>
+
 <body>
 <div class="site-root">
+
 <header>
   <nav class="wrap nav" aria-label="Navegação principal">
-    <a class="brand" href="#inicio" aria-label="Ir para o início"><span class="brand-mark">K</span><span>Kayky <span class="gradient">Andrade</span></span></a>
-    <div class="nav-links"><a href="#sobre">Sobre</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a class="nav-cta" href="#contato">Contato ↗</a></div>
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span class="brand-mark">K</span>
+      <span>Kayky <span class="gradient">Andrade</span></span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a class="nav-cta" href="#contato">Contato ↗</a>
+    </div>
   </nav>
 </header>
+
 <main>
+
 <section class="hero" id="inicio">
   <div class="wrap hero-grid">
     <div>
-      <div class="eyebrow"><span class="dot"></span> Desenvolvedor Web · Front-end e Back-end</div>
+      <div class="eyebrow">
+        <span class="dot"></span>
+        Desenvolvedor Web · Front-end e Back-end
+      </div>
+
       <h1>Kayky Andrade de Souza</h1>
-      <p class="lead">Desenvolvimento web é meu foco profissional: estudo HTML, CSS, JavaScript, PHP e SQL para criar páginas e aplicações funcionais, responsivas e bem estruturadas. Minha formação em Engenharia da Computação e experiência em suporte de TI complementam minha base técnica e minha capacidade de resolver problemas.</p>
-      <div class="actions"><a class="btn btn-primary" href="#experiencia">Minha experiência <span>↓</span></a><a class="btn btn-secondary" href="#projetos">Ver projetos ↗</a></div>
+
+      <p class="lead">
+        Desenvolvimento web é meu foco profissional: estudo HTML, CSS,
+        JavaScript, PHP e SQL para criar páginas e aplicações funcionais,
+        responsivas e bem estruturadas. Minha formação em Engenharia da
+        Computação e experiência em suporte de TI complementam minha base
+        técnica e minha capacidade de resolver problemas.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#experiencia">Minha experiência ↓</a>
+        <a class="btn btn-secondary" href="#projetos">Ver projetos ↗</a>
+      </div>
     </div>
+
     <aside class="profile-panel" aria-label="Perfil profissional">
-      <div class="profile-photo-placeholder"><img class="profile-photo" src="img/kayky.jpeg" alt="Foto profissional de Kayky Andrade"></div>
+      <div class="profile-photo-placeholder">
+        <img class="profile-photo" src="img/kayky.jpeg" alt="Foto profissional de Kayky Andrade">
+      </div>
+
       <h2>Kayky Andrade de Souza</h2>
-      <p class="profile-role">Desenvolvimento Web<br>HTML · CSS · JavaScript · PHP · SQL</p>
-      <div class="profile-tags"><span>Front-end</span><span>Back-end</span><span>Engenharia da Computação</span></div>
-      <a class="text-link" href="https://www.linkedin.com/in/kayky-andrade-8791522ba/" target="_blank" rel="noopener noreferrer">Conectar no LinkedIn ↗</a>
+
+      <p class="profile-role">
+        Desenvolvimento Web<br>
+        HTML · CSS · JavaScript · PHP · SQL
+      </p>
+
+      <div class="profile-tags">
+        <span>Front-end</span>
+        <span>Back-end</span>
+        <span>Engenharia da Computação</span>
+      </div>
+
+      <a class="text-link"
+         href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Conectar no LinkedIn ↗
+      </a>
     </aside>
   </div>
 </section>
+
 <section id="sobre">
   <div class="wrap">
-    <div class="section-head"><div class="kicker">Sobre mim</div><h2>Base técnica, curiosidade e vontade de construir.</h2><p class="section-desc">Uma apresentação honesta do meu momento profissional: aprendendo, praticando e evoluindo a cada projeto.</p></div>
+    <div class="section-head">
+      <div class="kicker">Sobre mim</div>
+      <h2>Base técnica, curiosidade e vontade de construir.</h2>
+      <p class="section-desc">
+        Uma apresentação honesta do meu momento profissional:
+        aprendendo, praticando e evoluindo a cada projeto.
+      </p>
+    </div>
+
     <div class="about-grid">
-      <div class="about-panel"><p class="big-quote">“Quero transformar ideias em experiências web úteis, acessíveis e bem construídas.”</p><p class="about-copy">Meu objetivo é conquistar uma oportunidade júnior em desenvolvimento web, colocar meus conhecimentos em prática e evoluir por meio de projetos reais.</p></div>
-      <div class="about-panel about-copy"><p>Meu foco principal é desenvolvimento web, com estudos em HTML, CSS, JavaScript, PHP e SQL. Tenho interesse em criar interfaces claras e responsivas, compreender a lógica por trás das aplicações e continuar ampliando meus conhecimentos de front-end e back-end.</p><p>Minha experiência anterior em suporte técnico e informática forense complementa essa trajetória com diagnóstico de problemas, atenção aos detalhes, documentação e raciocínio analítico.</p>
-        <div class="stats"><div class="stat"><strong>Web</strong><span>Foco profissional</span></div><div class="stat"><strong>Front + Back</strong><span>Estudos e projetos</span></div><div class="stat"><strong>TI</strong><span>Experiência complementar</span></div></div>
+      <div class="about-panel">
+        <p class="big-quote">
+          “Quero transformar ideias em experiências web úteis,
+          acessíveis e bem construídas.”
+        </p>
+        <p class="about-copy">
+          Meu objetivo é conquistar uma oportunidade júnior em
+          desenvolvimento web, colocar meus conhecimentos em prática
+          e evoluir por meio de projetos reais.
+        </p>
+      </div>
+
+      <div class="about-panel about-copy">
+        <p>
+          Meu foco principal é desenvolvimento web, com estudos em HTML,
+          CSS, JavaScript, PHP e SQL. Tenho interesse em criar interfaces
+          claras e responsivas, compreender a lógica por trás das aplicações
+          e continuar ampliando meus conhecimentos de front-end e back-end.
+        </p>
+
+        <p>
+          Minha experiência anterior em suporte técnico e informática
+          forense complementa essa trajetória com diagnóstico de problemas,
+          atenção aos detalhes, documentação e raciocínio analítico.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>Web</strong>
+            <span>Foco profissional</span>
+          </div>
+          <div class="stat">
+            <strong>Front + Back</strong>
+            <span>Estudos e projetos</span>
+          </div>
+          <div class="stat">
+            <strong>TI</strong>
+            <span>Experiência complementar</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 <section id="habilidades">
-  <div class="wrap"><div class="section-head"><div class="kicker">Habilidades</div><h2>Desenvolvimento web em primeiro plano.</h2><p class="section-desc">Tecnologias e fundamentos que venho estudando para construir páginas e aplicações web, com experiência em TI como base complementar.</p></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Habilidades</div>
+      <h2>Desenvolvimento web em primeiro plano.</h2>
+      <p class="section-desc">
+        Tecnologias e fundamentos que venho estudando para construir
+        páginas e aplicações web, com experiência em TI como base complementar.
+      </p>
+    </div>
+
     <div class="skills-grid">
-      <article class="skill-panel"><div class="skill-icon">&lt;/&gt;</div><h3>Desenvolvimento Web</h3><p>Criação e estruturação de páginas e projetos web, com foco em fundamentos front-end e back-end.</p><div class="pill-row"><span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">JavaScript</span><span class="pill">PHP</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">DB</div><h3>Bancos de dados</h3><p>Fundamentos de lógica, estruturação e consulta de dados para aplicações.</p><div class="pill-row"><span class="pill">SQL</span><span class="pill">Bancos relacionais</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">IT</div><h3>Suporte técnico e infraestrutura</h3><p>Atendimento ao usuário, manutenção de equipamentos e preparação de ambientes de trabalho.</p><div class="pill-row"><span class="pill">Windows</span><span class="pill">Hardware</span><span class="pill">Redes locais</span><span class="pill">Help Desk</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">DF</div><h3>Informática forense</h3><p>Contato profissional com ferramentas de análise, processamento e preservação de evidências digitais.</p><div class="pill-row"><span class="pill">Autopsy</span><span class="pill">FTK Imager</span><span class="pill">Magnet AXIOM</span><span class="pill">Cellebrite UFED</span><span class="pill">MSAB XRY</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">#</div><h3>Integridade de dados</h3><p>Aplicação de procedimentos de validação e documentação técnica em fluxos de trabalho forenses.</p><div class="pill-row"><span class="pill">MD5</span><span class="pill">SHA-256</span><span class="pill">Cadeia de custódia</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">C#</div><h3>Lógica e programação</h3><p>Base acadêmica em programação e resolução estruturada de problemas.</p><div class="pill-row"><span class="pill">C#</span><span class="pill">Lógica de programação</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">PC</div><h3>Hardware e sistemas</h3><p>Manutenção preventiva e corretiva, configuração de estações e instalação de softwares.</p><div class="pill-row"><span class="pill">Diagnóstico</span><span class="pill">Montagem de PCs</span><span class="pill">Softwares corporativos</span></div></article>
-      <article class="skill-panel"><div class="skill-icon">DVR</div><h3>Ferramentas técnicas</h3><p>Experiência com ferramentas de extração e processamento de mídias e sistemas de videomonitoramento.</p><div class="pill-row"><span class="pill">DVR Extractor</span><span class="pill">Análise de dados</span><span class="pill">Documentação técnica</span></div></article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">&lt;/&gt;</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Criação e estruturação de páginas e projetos web, com foco em fundamentos front-end e back-end.</p>
+        <div class="pill-row">
+          <span class="pill">HTML5</span>
+          <span class="pill">CSS3</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">PHP</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">DB</div>
+        <h3>Bancos de dados</h3>
+        <p>Fundamentos de lógica, estruturação e consulta de dados para aplicações.</p>
+        <div class="pill-row">
+          <span class="pill">SQL</span>
+          <span class="pill">Bancos relacionais</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">IT</div>
+        <h3>Suporte técnico e infraestrutura</h3>
+        <p>Atendimento ao usuário, manutenção de equipamentos e preparação de ambientes de trabalho.</p>
+        <div class="pill-row">
+          <span class="pill">Windows</span>
+          <span class="pill">Hardware</span>
+          <span class="pill">Redes locais</span>
+          <span class="pill">Help Desk</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">DF</div>
+        <h3>Informática forense</h3>
+        <p>Contato profissional com ferramentas de análise, processamento e preservação de evidências digitais.</p>
+        <div class="pill-row">
+          <span class="pill">Autopsy</span>
+          <span class="pill">FTK Imager</span>
+          <span class="pill">Magnet AXIOM</span>
+          <span class="pill">Cellebrite UFED</span>
+          <span class="pill">MSAB XRY</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">#</div>
+        <h3>Integridade de dados</h3>
+        <p>Aplicação de procedimentos de validação e documentação técnica em fluxos de trabalho forenses.</p>
+        <div class="pill-row">
+          <span class="pill">MD5</span>
+          <span class="pill">SHA-256</span>
+          <span class="pill">Cadeia de custódia</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">C#</div>
+        <h3>Lógica e programação</h3>
+        <p>Base acadêmica em programação e resolução estruturada de problemas.</p>
+        <div class="pill-row">
+          <span class="pill">C#</span>
+          <span class="pill">Lógica de programação</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">PC</div>
+        <h3>Hardware e sistemas</h3>
+        <p>Manutenção preventiva e corretiva, configuração de estações e instalação de softwares.</p>
+        <div class="pill-row">
+          <span class="pill">Diagnóstico</span>
+          <span class="pill">Montagem de PCs</span>
+          <span class="pill">Softwares corporativos</span>
+        </div>
+      </article>
+
+      <article class="skill-panel">
+        <div class="skill-icon">DVR</div>
+        <h3>Ferramentas técnicas</h3>
+        <p>Experiência com ferramentas de extração e processamento de mídias e sistemas de videomonitoramento.</p>
+        <div class="pill-row">
+          <span class="pill">DVR Extractor</span>
+          <span class="pill">Análise de dados</span>
+          <span class="pill">Documentação técnica</span>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
+
 <section id="experiencia">
-  <div class="wrap"><div class="section-head"><div class="kicker">Experiência profissional</div><h2>Experiência prática em ambientes de tecnologia.</h2><p class="section-desc">Atuação em suporte de TI e informática forense, com atenção a procedimentos, documentação e resolução de problemas.</p></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Experiência profissional</div>
+      <h2>Experiência prática em ambientes de tecnologia.</h2>
+      <p class="section-desc">
+        Atuação em suporte de TI e informática forense, com atenção
+        a procedimentos, documentação e resolução de problemas.
+      </p>
+    </div>
+
     <div class="experience-list">
-      <article class="experience-card"><div class="experience-top"><div><h3>Estagiário de Informática Forense</h3><div class="experience-company">Polícia Científica do Pará</div></div><div class="experience-date">Jun/2025 – Jun/2026</div></div><p>Atuação na preservação, aquisição e análise de evidências digitais em dispositivos móveis e mídias de armazenamento. Utilização de ferramentas como Cellebrite UFED, Magnet AXIOM, Autopsy, FTK Imager, MSAB XRY e DVR Extractor; apoio no processamento de sistemas DVR, validação de integridade por hash MD5 e SHA-256 e elaboração de documentação técnica.</p></article>
-      <article class="experience-card"><div class="experience-top"><div><h3>Técnico de TI</h3><div class="experience-company">Leal / antiga Hiléia</div></div><div class="experience-date">Ago/2024 – Nov/2024</div></div><p>Suporte técnico presencial a usuários, manutenção preventiva e corretiva de computadores e periféricos, instalação e configuração de sistemas operacionais e softwares corporativos, além de diagnóstico e resolução de falhas em equipamentos e redes locais.</p></article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Estagiário de Informática Forense</h3>
+            <div class="experience-company">Polícia Científica do Pará</div>
+          </div>
+          <div class="experience-date">Jun/2025 – Jun/2026</div>
+        </div>
+
+        <p>
+          Atuação na preservação, aquisição e análise de evidências digitais
+          em dispositivos móveis e mídias de armazenamento. Utilização de
+          ferramentas como Cellebrite UFED, Magnet AXIOM, Autopsy, FTK Imager,
+          MSAB XRY e DVR Extractor; apoio no processamento de sistemas DVR,
+          validação de integridade por hash MD5 e SHA-256 e elaboração
+          de documentação técnica.
+        </p>
+      </article>
+
+      <article class="experience-card">
+        <div class="experience-top">
+          <div>
+            <h3>Técnico de TI</h3>
+            <div class="experience-company">Leal / antiga Hiléia</div>
+          </div>
+          <div class="experience-date">Ago/2024 – Nov/2024</div>
+        </div>
+
+        <p>
+          Suporte técnico presencial a usuários, manutenção preventiva e
+          corretiva de computadores e periféricos, instalação e configuração
+          de sistemas operacionais e softwares corporativos, além de
+          diagnóstico e resolução de falhas em equipamentos e redes locais.
+        </p>
+      </article>
+
     </div>
   </div>
 </section>
+
 <section class="projects" id="projetos">
-  <div class="wrap"><div class="section-head"><div class="kicker">Projetos</div><h2>Aprendizado colocado em prática.</h2><p class="section-desc">Projetos acadêmicos e pessoais que ajudam a demonstrar minha evolução técnica.</p></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Projetos</div>
+      <h2>Aprendizado colocado em prática.</h2>
+      <p class="section-desc">
+        Projetos acadêmicos e pessoais que ajudam a demonstrar minha evolução técnica.
+      </p>
+    </div>
+
     <div class="project-grid">
-      <article class="project-card"><div class="project-art alt"><div class="project-label">Projeto pessoal · Web</div></div><div class="project-body"><h3>3animes — projeto web</h3><p>Página em HTML que apresenta três animes favoritos — Dragon Ball, Fairy Tail e One Piece — com descrições dos personagens e imagens em GIF. É um projeto inicial para demonstrar meus fundamentos de estruturação web.</p><div class="pill-row"><span class="pill">HTML</span><span class="pill">Estrutura semântica</span><span class="pill">Imagens</span></div><p class="project-note">Próximos passos: evoluir o CSS, a responsividade e a interação com JavaScript.</p><div class="project-links">https://kaykydebug.github.io/3animes/<a class="text-link" href="#" aria-label="Link do projeto 3animes">link do projeto ↗</a></div></div></article>
+      <article class="project-card">
+
+        <div class="project-art alt">
+          <div class="project-label">Projeto pessoal · Web</div>
+        </div>
+
+        <div class="project-body">
+          <h3>3animes — projeto web</h3>
+
+          <p>
+            Página em HTML que apresenta três animes favoritos — Dragon Ball,
+            Fairy Tail e One Piece — com descrições dos personagens e imagens
+            em GIF. É um projeto inicial para demonstrar meus fundamentos
+            de estruturação web.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">HTML</span>
+            <span class="pill">Estrutura semântica</span>
+            <span class="pill">Imagens</span>
+          </div>
+
+          <p class="project-note">
+            Próximos passos: evoluir o CSS, a responsividade e a interação com JavaScript.
+          </p>
+
+          <div class="project-links">
+            <a
+              class="text-link"
+              href="https://kaykydebug.github.io/3animes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Acessar o projeto 3animes em uma nova aba">
+              Acessar o projeto ↗
+            </a>
+          </div>
+        </div>
+
+      </article>
     </div>
-    <p class="edit-note">Nota para a versão final: substitua as descrições provisórias pelos detalhes confirmados dos projetos e adicione links públicos apenas quando estiverem prontos.</p>
   </div>
 </section>
+
 <section id="aprendizado">
-  <div class="wrap"><div class="section-head"><div class="kicker">Em evolução</div><h2>O que estou buscando desenvolver.</h2></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Em evolução</div>
+      <h2>O que estou buscando desenvolver.</h2>
+    </div>
+
     <div class="learning-grid">
-      <div class="learning-item"><div class="learning-num">01</div><div><h3>Desenvolvimento web</h3><p>Aprofundar HTML5, CSS3, JavaScript e PHP com projetos que demonstrem aplicações práticas.</p></div></div>
-      <div class="learning-item"><div class="learning-num">02</div><div><h3>Bancos de dados</h3><p>Continuar praticando SQL e os fundamentos de organização e consulta de dados.</p></div></div>
-      <div class="learning-item"><div class="learning-num">03</div><div><h3>Versionamento e colaboração</h3><p>Organizar repositórios no GitHub e documentar projetos de forma clara e profissional.</p></div></div>
-      <div class="learning-item"><div class="learning-num">04</div><div><h3>Infraestrutura e segurança</h3><p>Expandir conhecimentos em diagnóstico de sistemas, suporte técnico e ferramentas de análise digital.</p></div></div>
+
+      <div class="learning-item">
+        <div class="learning-num">01</div>
+        <div>
+          <h3>Desenvolvimento web</h3>
+          <p>Aprofundar HTML5, CSS3, JavaScript e PHP com projetos que demonstrem aplicações práticas.</p>
+        </div>
+      </div>
+
+      <div class="learning-item">
+        <div class="learning-num">02</div>
+        <div>
+          <h3>Bancos de dados</h3>
+          <p>Continuar praticando SQL e os fundamentos de organização e consulta de dados.</p>
+        </div>
+      </div>
+
+      <div class="learning-item">
+        <div class="learning-num">03</div>
+        <div>
+          <h3>Versionamento e colaboração</h3>
+          <p>Organizar repositórios no GitHub e documentar projetos de forma clara e profissional.</p>
+        </div>
+      </div>
+
+      <div class="learning-item">
+        <div class="learning-num">04</div>
+        <div>
+          <h3>Infraestrutura e segurança</h3>
+          <p>Expandir conhecimentos em diagnóstico de sistemas, suporte técnico e ferramentas de análise digital.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 <section id="contato">
-  <div class="wrap"><div class="contact-card"><div><div class="kicker">Contato</div><h2>Vamos conversar?</h2><p>Estou aberto a oportunidades de estágio e posições júnior, além de conexões com pessoas que gostam de tecnologia e desenvolvimento.</p></div><div class="actions"><a class="btn btn-secondary" href="mailto:andradekayky99@gmail.com">Enviar e-mail ↗</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/kayky-andrade-8791522ba/" target="_blank" rel="noopener noreferrer">Meu LinkedIn ↗</a></div></div></div>
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <div class="kicker">Contato</div>
+        <h2>Vamos conversar?</h2>
+        <p>
+          Estou aberto a oportunidades júnior, além de conexões com pessoas
+          que gostam de tecnologia e desenvolvimento.
+        </p>
+      </div>
+
+      <div class="actions">
+        <a class="btn btn-secondary" href="mailto:andradekayky99@gmail.com">
+          Enviar e-mail ↗
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Meu LinkedIn ↗
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
 </main>
-<footer><div class="wrap footer-row"><span>© <span id="year">2026</span> Kayky Andrade de Souza · Portfólio profissional</span><span>HTML · CSS · JavaScript</span></div></footer>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© <span id="year">2026</span> Kayky Andrade de Souza · Portfólio profissional</span>
+    <span>HTML · CSS · JavaScript</span>
+  </div>
+</footer>
+
 </div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>

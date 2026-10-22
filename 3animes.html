@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Animes Preferidos</title>
+    <!-- Fonte do Google Fonts para um visual moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset e Variáveis de Cores */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #ff4757;
+            --border-radius: 12px;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #334155;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* Lista de Animes (Cards) */
+        .anime-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .anime-card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .anime-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .anime-card p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        /* Imagens Responsivas */
+        .img-container {
+            width: 100%;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            display: block;
+            border-radius: var(--border-radius);
+            transition: transform 0.3s ease;
+        }
+
+        .anime-card:hover img {
+            transform: scale(1.02);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Meus Animes Preferidos</h1>
+            <h2>Os 3 Melhores Animes da Minha Lista</h2>
+        </header>
+
+        <main class="anime-list">
+            <!-- Anime 1 -->
+            <article class="anime-card">
+                <h3>1) Dragon Ball</h3>
+                <p>Goku é um guerreiro que embarca em aventuras em busca das Esferas do Dragão. Ao longo da jornada, enfrenta inimigos poderosos, supera seus limites e protege a Terra de grandes ameaças.</p>
+                <div class="img-container">
+                    <img src="img/goku.gif" alt="Dragon Ball">
+                </div>
+            </article>
+
+            <!-- Anime 2 -->
+            <article class="anime-card">
+                <h3>2) Fairy Tail</h3>
+                <p>Lucy é uma jovem maga que sonha em fazer parte de uma guilda famosa. Ao entrar para a Fairy Tail, ela vive aventuras ao lado de Natsu e seus amigos, enfrentando inimigos e fortalecendo os laços de amizade.</p>
+                <div class="img-container">
+                    <img src="img/download.gif" alt="Fairy Tail">
+                </div>
+            </article>
+
+            <!-- Anime 3 -->
+            <article class="anime-card">
+                <h3>3) One Piece</h3>
+                <p>Monkey D. Luffy é um jovem pirata que sonha em encontrar o lendário tesouro One Piece e se tornar o Rei dos Piratas. Ao lado de sua tripulação, ele explora ilhas misteriosas, enfrenta adversários e descobre os segredos do mundo.</p>
+                <div class="img-container">
+                    <img src="img/download (1).gif" alt="One Piece">
+                </div>
+            </article>
+        </main>
+
+        <footer>
+            <p>Projeto criado com HTML5 e CSS3</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -355,8 +355,27 @@ footer {
 .footer-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 15px;
+}
+
+/* LINKS DO RODAPÉ */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  font-weight: 700;
+  transition: .2s;
+}
+
+.footer-links a:hover {
+  color: var(--blue);
+  text-decoration: underline;
 }
 
 @media(max-width:800px) {
@@ -374,6 +393,15 @@ footer {
   section { padding: 55px 0; }
   h1 { letter-spacing: -2px; }
   .wrap { width: calc(100% - 28px); }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 18px;
+  }
 }
 </style>
 </head>
@@ -760,6 +788,15 @@ footer {
 <footer>
 <div class="wrap footer-row">
   <span>© <span id="year">2026</span> Kayky Andrade de Souza</span>
+
+  <div class="footer-links">
+    <a href="mailto:andradekayky99@gmail.com">E-mail</a>
+
+    <a href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
+       target="_blank"
+       rel="noopener noreferrer">LinkedIn</a>
+  </div>
+
   <span>Infraestrutura de TI · Suporte Técnico · Cloud Computing</span>
 </div>
 </footer>

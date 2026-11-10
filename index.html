@@ -4,8 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfólio profissional de Kayky Andrade de Souza. Engenharia da Computação, Infraestrutura de TI, Suporte Técnico e Informática Forense.">
-<title>Kayky Andrade | Infraestrutura de TI</title>
+
+<meta name="description" content="Portfólio profissional de Kayky Andrade de Souza. Suporte Técnico, Infraestrutura de TI, Engenharia da Computação, Desenvolvimento Web e Automação.">
+
+<title>Kayky Andrade | Tecnologia da Informação</title>
 
 <style>
 :root {
@@ -19,9 +21,13 @@
   --soft: #EAF4FF;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -30,12 +36,17 @@ body {
   color: var(--text);
 }
 
-a { text-decoration: none; color: inherit; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .wrap {
   width: min(1120px, calc(100% - 40px));
   margin: auto;
 }
+
+/* NAVEGAÇÃO */
 
 header {
   position: sticky;
@@ -54,18 +65,26 @@ nav {
   gap: 20px;
 }
 
-.brand { font-size: 19px; font-weight: 800; }
-.brand span { color: var(--blue); }
+.brand {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.brand span {
+  color: var(--blue);
+}
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
   font-size: 13px;
   color: var(--muted);
 }
 
-.nav-links a:hover { color: var(--blue); }
+.nav-links a:hover {
+  color: var(--blue);
+}
 
 .nav-button {
   background: var(--blue);
@@ -74,7 +93,11 @@ nav {
   border-radius: 10px;
 }
 
-.hero { padding: 90px 0 75px; }
+/* INÍCIO */
+
+.hero {
+  padding: 90px 0 75px;
+}
 
 .hero-grid {
   display: grid;
@@ -100,13 +123,15 @@ h1 {
   margin: 22px 0;
 }
 
-.highlight { color: var(--blue); }
+.highlight {
+  color: var(--blue);
+}
 
 .lead {
   font-size: 17px;
   color: var(--muted);
   line-height: 1.8;
-  max-width: 620px;
+  max-width: 650px;
 }
 
 .buttons {
@@ -126,10 +151,21 @@ h1 {
   transition: .2s;
 }
 
-.btn:hover { transform: translateY(-3px); }
+.btn:hover {
+  transform: translateY(-3px);
+}
 
-.primary { background: var(--blue); color: white; border-color: var(--blue); }
-.secondary { background: white; }
+.primary {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+
+.secondary {
+  background: white;
+}
+
+/* FOTO E PERFIL */
 
 .profile {
   background: white;
@@ -148,7 +184,10 @@ h1 {
   border: 5px solid var(--soft);
 }
 
-.profile h2 { font-size: 22px; margin: 18px 0 8px; }
+.profile h2 {
+  font-size: 22px;
+  margin: 18px 0 8px;
+}
 
 .profile p {
   color: var(--muted);
@@ -164,7 +203,8 @@ h1 {
   margin-top: 17px;
 }
 
-.profile-tags span, .pill {
+.profile-tags span,
+.pill {
   padding: 7px 10px;
   border-radius: 30px;
   background: var(--soft);
@@ -173,9 +213,15 @@ h1 {
   font-weight: 750;
 }
 
-section { padding: 75px 0; }
+/* SEÇÕES */
 
-.section-title { margin-bottom: 32px; }
+section {
+  padding: 75px 0;
+}
+
+.section-title {
+  margin-bottom: 32px;
+}
 
 .kicker {
   color: var(--blue);
@@ -194,8 +240,10 @@ h2 {
 .description {
   color: var(--muted);
   line-height: 1.8;
-  max-width: 700px;
+  max-width: 720px;
 }
+
+/* SOBRE */
 
 .about-grid {
   display: grid;
@@ -203,7 +251,10 @@ h2 {
   gap: 20px;
 }
 
-.panel, .skill, .experience, .certificate {
+.panel,
+.skill,
+.experience,
+.certificate {
   background: white;
   border: 1px solid var(--border);
   border-radius: 19px;
@@ -221,7 +272,10 @@ h2 {
   line-height: 1.6;
 }
 
-.panel p, .skill p, .experience p, .certificate p {
+.panel p,
+.skill p,
+.experience p,
+.certificate p {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.8;
@@ -240,8 +294,17 @@ h2 {
   border-radius: 12px;
 }
 
-.stat strong { display: block; font-size: 18px; }
-.stat span { font-size: 11px; color: var(--muted); }
+.stat strong {
+  display: block;
+  font-size: 18px;
+}
+
+.stat span {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* COMPETÊNCIAS */
 
 .skills-grid {
   display: grid;
@@ -261,7 +324,10 @@ h2 {
   margin-bottom: 17px;
 }
 
-.skill h3 { font-size: 17px; margin-bottom: 8px; }
+.skill h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
 
 .pills {
   display: flex;
@@ -270,7 +336,12 @@ h2 {
   margin-top: 15px;
 }
 
-.experience-list { display: grid; gap: 16px; }
+/* EXPERIÊNCIA */
+
+.experience-list {
+  display: grid;
+  gap: 16px;
+}
 
 .experience-top {
   display: flex;
@@ -279,11 +350,23 @@ h2 {
   gap: 12px;
 }
 
-.experience h3 { margin: 0 0 5px; font-size: 18px; }
+.experience h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
 
-.company { color: var(--blue); font-size: 14px; font-weight: 800; }
+.company {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+}
 
-.date { color: var(--muted); font-size: 12px; }
+.date {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* FORMAÇÃO */
 
 .certificates-grid {
   display: grid;
@@ -291,8 +374,15 @@ h2 {
   gap: 14px;
 }
 
-.certificate h3 { font-size: 15px; margin: 0 0 7px; }
-.certificate p { margin: 0; font-size: 12px; }
+.certificate h3 {
+  font-size: 15px;
+  margin: 0 0 7px;
+}
+
+.certificate p {
+  margin: 0;
+  font-size: 12px;
+}
 
 .certificate-label {
   display: inline-block;
@@ -303,12 +393,16 @@ h2 {
   text-transform: uppercase;
 }
 
+/* ESTUDOS */
+
 .studies {
   background: var(--navy);
   color: white;
 }
 
-.studies .description { color: #C4D0E5; }
+.studies .description {
+  color: #C4D0E5;
+}
 
 .study-grid {
   display: grid;
@@ -323,14 +417,23 @@ h2 {
   background: #ffffff0b;
 }
 
-.study h3 { font-size: 16px; }
-.study p { color: #C4D0E5; font-size: 13px; line-height: 1.7; }
+.study h3 {
+  font-size: 16px;
+}
+
+.study p {
+  color: #C4D0E5;
+  font-size: 13px;
+  line-height: 1.7;
+}
 
 .study-status {
   color: #82C3FF;
   font-size: 11px;
   font-weight: 800;
 }
+
+/* CONTATO */
 
 .contact {
   background: var(--navy);
@@ -343,7 +446,12 @@ h2 {
   gap: 25px;
 }
 
-.contact p { color: #C4D0E5; line-height: 1.7; }
+.contact p {
+  color: #C4D0E5;
+  line-height: 1.7;
+}
+
+/* RODAPÉ */
 
 footer {
   padding: 25px 0;
@@ -360,7 +468,6 @@ footer {
   gap: 15px;
 }
 
-/* LINKS DO RODAPÉ */
 .footer-links {
   display: flex;
   align-items: center;
@@ -378,21 +485,55 @@ footer {
   text-decoration: underline;
 }
 
+/* RESPONSIVIDADE */
+
 @media(max-width:800px) {
-  .hero-grid, .about-grid { grid-template-columns: 1fr; }
-  .skills-grid { grid-template-columns: repeat(2,1fr); }
-  .contact { flex-direction: column; align-items: flex-start; }
-  .nav-links { gap: 12px; }
-  .nav-links a:not(.nav-button) { display: none; }
+  .hero-grid,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a:not(.nav-button) {
+    display: none;
+  }
 }
 
 @media(max-width:560px) {
-  .skills-grid, .certificates-grid, .study-grid { grid-template-columns: 1fr; }
-  .stats { grid-template-columns: 1fr; }
-  .hero { padding-top: 55px; }
-  section { padding: 55px 0; }
-  h1 { letter-spacing: -2px; }
-  .wrap { width: calc(100% - 28px); }
+  .skills-grid,
+  .certificates-grid,
+  .study-grid,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 55px;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+  }
+
+  .wrap {
+    width: calc(100% - 28px);
+  }
 
   .footer-row {
     flex-direction: column;
@@ -411,11 +552,12 @@ footer {
 <header>
 <nav class="wrap">
   <a class="brand" href="#inicio">Kayky <span>Andrade</span></a>
+
   <div class="nav-links">
     <a href="#sobre">Sobre</a>
     <a href="#habilidades">Competências</a>
     <a href="#experiencia">Experiência</a>
-    <a href="#certificados">Certificados</a>
+    <a href="#formacao">Formação</a>
     <a class="nav-button" href="#contato">Contato ↗</a>
   </div>
 </nav>
@@ -423,24 +565,32 @@ footer {
 
 <main>
 
+<!-- INÍCIO -->
+
 <section class="hero" id="inicio">
 <div class="wrap hero-grid">
 
 <div>
-  <span class="tag">ENGENHARIA DA COMPUTAÇÃO · TECNOLOGIA DA INFORMAÇÃO</span>
+  <span class="tag">TECNOLOGIA DA INFORMAÇÃO · ENGENHARIA DA COMPUTAÇÃO</span>
 
-  <h1>Kayky Andrade de Souza</h1>
+  <h1>Kayky Andrade <span class="highlight">de Souza</span></h1>
 
   <p class="lead">
-    Profissional formado em Engenharia da Computação, com experiência em
-    suporte técnico e informática forense. Interesse em infraestrutura de TI,
-    administração de sistemas Windows e computação em nuvem.
-    Busco oportunidades para aplicar meus conhecimentos e evoluir na área de tecnologia.
+    Profissional de Tecnologia da Informação com experiência em suporte técnico,
+    infraestrutura e informática forense. Também estou ampliando meus conhecimentos
+    em desenvolvimento web e automação de processos, buscando criar soluções práticas
+    e resolver problemas por meio da tecnologia.
   </p>
 
   <div class="buttons">
     <a class="btn primary" href="#experiencia">Conheça minha experiência ↓</a>
-    <a class="btn secondary" href="https://www.linkedin.com/in/kayky-andrade-8791522ba/" target="_blank" rel="noopener noreferrer">Meu LinkedIn ↗</a>
+
+    <a class="btn secondary"
+       href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
+       target="_blank"
+       rel="noopener noreferrer">
+       Meu LinkedIn ↗
+    </a>
   </div>
 </div>
 
@@ -448,67 +598,94 @@ footer {
   <img class="photo" src="img/kayky.jpeg" alt="Foto profissional de Kayky Andrade">
 
   <h2>Kayky Andrade</h2>
-  <p>Infraestrutura de TI<br>Suporte Técnico · Informática Forense</p>
+
+  <p>
+    Suporte Técnico · Infraestrutura de TI<br>
+    Desenvolvimento Web · Automação
+  </p>
 
   <div class="profile-tags">
-    <span>Windows</span>
-    <span>Infraestrutura</span>
-    <span>Cloud Computing</span>
+    <span>Suporte</span>
+    <span>Desenvolvimento Web</span>
+    <span>Automação</span>
   </div>
 </aside>
 
 </div>
 </section>
 
+<!-- SOBRE -->
+
 <section id="sobre">
 <div class="wrap">
 
 <div class="section-title">
   <span class="kicker">Sobre mim</span>
-  <h2>Conhecimento técnico e experiência prática.</h2>
+  <h2>Experiência em TI e aprendizado contínuo.</h2>
+
   <p class="description">
-    Minha trajetória na tecnologia reúne formação acadêmica, experiência profissional
-    e interesse contínuo em aprender novas ferramentas e soluções.
+    Minha trajetória reúne formação em Engenharia da Computação,
+    experiência profissional e desenvolvimento constante de conhecimentos em tecnologia.
   </p>
 </div>
 
 <div class="about-grid">
 
 <div class="panel about-highlight">
-  <p>“Tecnologia é solucionar problemas, melhorar processos e tornar ambientes mais eficientes.”</p>
+  <p>
+    "Gosto de usar a tecnologia para solucionar problemas,
+    melhorar processos e criar soluções úteis."
+  </p>
 </div>
 
 <div class="panel">
+
   <p>
-    Sou formado em Engenharia da Computação pela Estácio e possuo experiência
+    Sou formado em Engenharia da Computação pela Estácio e tenho experiência
     profissional em suporte técnico e informática forense.
   </p>
+
   <p>
-    Na área de suporte, tive contato com manutenção de computadores,
-    instalação e configuração de sistemas e softwares, além de diagnóstico
-    de problemas técnicos.
+    Na área de suporte, trabalhei com manutenção de computadores,
+    instalação e configuração de sistemas e softwares, atendimento
+    a usuários e diagnóstico de problemas técnicos.
   </p>
+
   <p>
-    Na Polícia Científica do Pará, participei de atividades relacionadas
-    à preservação, aquisição e análise de evidências digitais, utilizando
-    ferramentas especializadas e procedimentos de documentação técnica.
+    Na Polícia Científica do Pará, participei de atividades de aquisição,
+    preservação e análise de evidências digitais, utilizando ferramentas
+    especializadas e procedimentos de documentação técnica.
   </p>
+
   <p>
-    Atualmente, direciono meu desenvolvimento profissional para infraestrutura
-    de TI, administração de sistemas e computação em nuvem, com interesse
-    especial no ecossistema Microsoft.
+    Atualmente, estudo Desenvolvimento Web e busco aplicar programação,
+    bancos de dados e APIs na criação de sistemas e na automação de tarefas.
+    Também mantenho interesse em suporte, infraestrutura e outras oportunidades em TI.
   </p>
 
   <div class="stats">
-    <div class="stat"><strong>2026</strong><span>Formação concluída</span></div>
-    <div class="stat"><strong>2</strong><span>Experiências profissionais</span></div>
-    <div class="stat"><strong>TI</strong><span>Área de atuação</span></div>
+    <div class="stat">
+      <strong>2026</strong>
+      <span>Formação em Engenharia da Computação</span>
+    </div>
+
+    <div class="stat">
+      <strong>2</strong>
+      <span>Experiências profissionais</span>
+    </div>
+
+    <div class="stat">
+      <strong>TI</strong>
+      <span>Área de atuação</span>
+    </div>
   </div>
-</div>
 
 </div>
 </div>
+</div>
 </section>
+
+<!-- COMPETÊNCIAS -->
 
 <section id="habilidades">
 <div class="wrap">
@@ -516,9 +693,11 @@ footer {
 <div class="section-title">
   <span class="kicker">Competências</span>
   <h2>Conhecimentos e ferramentas.</h2>
+
   <p class="description">
     Competências desenvolvidas durante minha formação acadêmica,
-    cursos e experiências profissionais.
+    cursos e experiências profissionais. As tecnologias de desenvolvimento
+    fazem parte dos meus estudos em andamento.
   </p>
 </div>
 
@@ -527,34 +706,83 @@ footer {
 <article class="skill">
   <div class="skill-icon">IT</div>
   <h3>Suporte Técnico</h3>
-  <p>Experiência com suporte a usuários, instalação de softwares,
-  configuração de sistemas e diagnóstico de problemas.</p>
+
+  <p>
+    Experiência com atendimento a usuários, manutenção de equipamentos,
+    instalação de softwares e diagnóstico de problemas técnicos.
+  </p>
+
   <div class="pills">
     <span class="pill">Windows</span>
+    <span class="pill">Hardware</span>
     <span class="pill">Instalação de software</span>
     <span class="pill">Troubleshooting</span>
-    <span class="pill">Suporte técnico</span>
+    <span class="pill">Suporte ao usuário</span>
+  </div>
+</article>
+
+<article class="skill">
+  <div class="skill-icon">WEB</div>
+  <h3>Desenvolvimento Web</h3>
+
+  <p>
+    Estudos em desenvolvimento de páginas e sistemas web,
+    desde a estrutura da interface até a integração com banco de dados.
+  </p>
+
+  <div class="pills">
+    <span class="pill">HTML</span>
+    <span class="pill">CSS</span>
+    <span class="pill">JavaScript</span>
+    <span class="pill">PHP</span>
+    <span class="pill">MySQL</span>
+    <span class="pill">APIs</span>
   </div>
 </article>
 
 <article class="skill">
   <div class="skill-icon">SYS</div>
-  <h3>Sistemas e Infraestrutura</h3>
-  <p>Conhecimentos relacionados à configuração de computadores,
-  sistemas operacionais e fundamentos de infraestrutura.</p>
+  <h3>Infraestrutura e Sistemas</h3>
+
+  <p>
+    Experiência e conhecimentos relacionados à configuração
+    de computadores, sistemas operacionais e fundamentos de infraestrutura.
+  </p>
+
   <div class="pills">
-    <span class="pill">Sistemas operacionais</span>
+    <span class="pill">Windows</span>
     <span class="pill">Hardware</span>
     <span class="pill">Redes locais</span>
-    <span class="pill">Máquinas virtuais</span>
+    <span class="pill">Diagnóstico</span>
+  </div>
+</article>
+
+<article class="skill">
+  <div class="skill-icon">AUTO</div>
+  <h3>Automação de Processos</h3>
+
+  <p>
+    Interesse em desenvolver soluções que reduzam tarefas manuais,
+    integrem informações e tornem processos mais eficientes.
+  </p>
+
+  <div class="pills">
+    <span class="pill">Lógica de programação</span>
+    <span class="pill">APIs</span>
+    <span class="pill">Banco de dados</span>
+    <span class="pill">Em desenvolvimento</span>
   </div>
 </article>
 
 <article class="skill">
   <div class="skill-icon">DF</div>
   <h3>Informática Forense</h3>
-  <p>Experiência com ferramentas especializadas em aquisição,
-  preservação e análise de evidências digitais.</p>
+
+  <p>
+    Experiência com ferramentas especializadas em aquisição,
+    preservação e análise de evidências digitais.
+  </p>
+
   <div class="pills">
     <span class="pill">Autopsy</span>
     <span class="pill">FTK Imager</span>
@@ -565,38 +793,19 @@ footer {
 </article>
 
 <article class="skill">
-  <div class="skill-icon">#</div>
-  <h3>Integridade de Dados</h3>
-  <p>Aplicação de procedimentos técnicos de verificação
-  de integridade e documentação.</p>
+  <div class="skill-icon">HASH</div>
+  <h3>Integridade e Documentação</h3>
+
+  <p>
+    Aplicação de procedimentos de verificação de integridade,
+    preservação de evidências e documentação técnica.
+  </p>
+
   <div class="pills">
     <span class="pill">MD5</span>
     <span class="pill">SHA-256</span>
     <span class="pill">Cadeia de custódia</span>
-  </div>
-</article>
-
-<article class="skill">
-  <div class="skill-icon">PC</div>
-  <h3>Hardware e Software</h3>
-  <p>Base acadêmica em desenvolvimento e integração
-  de componentes de hardware e software.</p>
-  <div class="pills">
-    <span class="pill">Hardware</span>
-    <span class="pill">Software</span>
-    <span class="pill">Diagnóstico</span>
-  </div>
-</article>
-
-<article class="skill">
-  <div class="skill-icon">AN</div>
-  <h3>Análise e Resolução</h3>
-  <p>Formação acadêmica voltada à análise de problemas,
-  raciocínio lógico e tomada de decisão.</p>
-  <div class="pills">
-    <span class="pill">Análise de problemas</span>
-    <span class="pill">Documentação</span>
-    <span class="pill">Análise de dados</span>
+    <span class="pill">Relatórios técnicos</span>
   </div>
 </article>
 
@@ -604,12 +813,15 @@ footer {
 </div>
 </section>
 
+<!-- EXPERIÊNCIA -->
+
 <section id="experiencia">
 <div class="wrap">
 
 <div class="section-title">
   <span class="kicker">Experiência profissional</span>
   <h2>Minha trajetória na tecnologia.</h2>
+
   <p class="description">
     Experiências profissionais que contribuíram para minha formação técnica
     e desenvolvimento de habilidades.
@@ -624,15 +836,17 @@ footer {
       <h3>Estagiário de Informática Forense</h3>
       <div class="company">Polícia Científica do Pará</div>
     </div>
+
     <span class="date">Jun/2025 – Jun/2026</span>
   </div>
+
   <p>
     Atuação em procedimentos de preservação, aquisição e análise de evidências
-    digitais em dispositivos móveis e mídias de armazenamento. Utilização de
-    ferramentas como Cellebrite UFED, Magnet AXIOM, Autopsy, FTK Imager,
-    MSAB XRY e DVR Extractor. Apoio na verificação de integridade por meio
-    de hashes MD5 e SHA-256 e na elaboração de documentação técnica,
-    seguindo procedimentos de cadeia de custódia.
+    digitais em dispositivos móveis, mídias de armazenamento e sistemas de
+    videomonitoramento (DVR). Utilização de ferramentas como Cellebrite UFED,
+    Magnet AXIOM, Autopsy, FTK Imager, MSAB XRY e DVR Extractor.
+    Apoio na verificação de integridade por meio de hashes MD5 e SHA-256
+    e na elaboração de documentação técnica, seguindo procedimentos de cadeia de custódia.
   </p>
 </article>
 
@@ -642,13 +856,15 @@ footer {
       <h3>Técnico de TI</h3>
       <div class="company">Leal (antiga Hiléia)</div>
     </div>
+
     <span class="date">Ago/2024 – Nov/2024</span>
   </div>
+
   <p>
-    Suporte técnico presencial a usuários, manutenção de computadores e
-    periféricos, instalação e configuração de sistemas operacionais e
-    softwares, além de diagnóstico e resolução de problemas em equipamentos
-    e redes locais.
+    Suporte técnico presencial a usuários, manutenção de computadores
+    e periféricos, instalação e configuração de sistemas operacionais
+    e softwares, além de diagnóstico e resolução de problemas
+    em equipamentos e redes locais.
   </p>
 </article>
 
@@ -656,23 +872,39 @@ footer {
 </div>
 </section>
 
-<section id="certificados">
+<!-- FORMAÇÃO E CURSOS -->
+
+<section id="formacao">
 <div class="wrap">
 
 <div class="section-title">
-  <span class="kicker">Formação e certificações</span>
-  <h2>Cursos e desenvolvimento profissional.</h2>
+  <span class="kicker">Formação e cursos</span>
+  <h2>Formação acadêmica e desenvolvimento profissional.</h2>
+
   <p class="description">
-    Cursos e certificados que complementam minha formação em Engenharia da Computação.
+    Formação em Engenharia da Computação e cursos complementares
+    relacionados à tecnologia.
   </p>
 </div>
 
 <div class="certificates-grid">
 
 <article class="certificate">
+  <span class="certificate-label">Formação acadêmica · 2026</span>
+  <h3>Bacharelado em Engenharia da Computação</h3>
+  <p>Faculdade Estácio de Sá Pará.</p>
+</article>
+
+<article class="certificate">
+  <span class="certificate-label">Udemy · Em andamento</span>
+  <h3>Desenvolvimento Web Completo – 20 cursos + 20 projetos</h3>
+  <p>Formação em desenvolvimento web, com tecnologias e projetos práticos.</p>
+</article>
+
+<article class="certificate">
   <span class="certificate-label">Udemy · Concluído</span>
   <h3>Suporte Técnico na Prática</h3>
-  <p>Cássio Assis · 10 horas · Novembro de 2026</p>
+  <p>Cássio Assis · 10 horas · Novembro de 2026.</p>
 </article>
 
 <article class="certificate">
@@ -715,78 +947,105 @@ footer {
 </div>
 </section>
 
+<!-- ESTUDOS -->
+
 <section class="studies" id="estudos">
 <div class="wrap">
 
 <div class="section-title">
-  <span class="kicker">Desenvolvimento profissional</span>
-  <h2>Próximos passos na minha carreira.</h2>
+  <span class="kicker">Estudos atuais e próximos passos</span>
+  <h2>Ampliando meus conhecimentos.</h2>
+
   <p class="description">
-    Direcionamento de estudos para aprofundar conhecimentos
-    em infraestrutura e computação em nuvem.
+    Estou desenvolvendo conhecimentos que complementam minha experiência em TI
+    e me ajudam a atuar em diferentes frentes da tecnologia.
   </p>
 </div>
 
 <div class="study-grid">
 
 <article class="study">
-  <span class="study-status">ÁREA DE INTERESSE</span>
-  <h3>Administração de Sistemas Windows</h3>
-  <p>Aprofundar conhecimentos em configuração, administração
-  e gerenciamento de ambientes Windows.</p>
-</article>
-
-<article class="study">
-  <span class="study-status">ÁREA DE INTERESSE</span>
-  <h3>Infraestrutura de TI</h3>
-  <p>Desenvolver conhecimentos em servidores, redes,
-  gerenciamento de ambientes e operações de TI.</p>
+  <span class="study-status">EM ANDAMENTO</span>
+  <h3>Desenvolvimento Web</h3>
+  <p>
+    Aprofundar HTML, CSS, JavaScript, PHP, MySQL e integração
+    com APIs por meio de estudos e projetos práticos.
+  </p>
 </article>
 
 <article class="study">
   <span class="study-status">OBJETIVO DE APRENDIZADO</span>
-  <h3>Microsoft Azure</h3>
-  <p>Estudar serviços de computação em nuvem, máquinas virtuais,
-  armazenamento, redes e gerenciamento de recursos.</p>
+  <h3>Automação de Processos</h3>
+  <p>
+    Aprender a criar soluções que automatizem tarefas,
+    conectem sistemas e facilitem atividades do dia a dia.
+  </p>
+</article>
+
+<article class="study">
+  <span class="study-status">APERFEIÇOAMENTO</span>
+  <h3>Suporte e Infraestrutura de TI</h3>
+  <p>
+    Continuar aprimorando conhecimentos em sistemas operacionais,
+    hardware, redes e diagnóstico de problemas.
+  </p>
 </article>
 
 <article class="study">
   <span class="study-status">OBJETIVO DE APRENDIZADO</span>
-  <h3>Microsoft 365 e Intune</h3>
-  <p>Conhecer ferramentas de gerenciamento de usuários,
-  dispositivos, aplicações e ambientes corporativos.</p>
+  <h3>APIs e Banco de Dados</h3>
+  <p>
+    Praticar integração entre aplicações, organização de dados
+    e desenvolvimento de funcionalidades para sistemas web.
+  </p>
 </article>
 
 </div>
 </div>
 </section>
+
+<!-- CONTATO -->
 
 <section id="contato">
 <div class="wrap">
 
 <div class="contact">
+
   <div>
     <span class="kicker">Contato</span>
     <h2>Vamos conversar?</h2>
+
     <p>
       Estou aberto a oportunidades na área de Tecnologia da Informação,
-      especialmente em infraestrutura, suporte técnico e administração de sistemas.
+      incluindo suporte técnico, infraestrutura, sistemas,
+      desenvolvimento web e automação.
     </p>
   </div>
 
   <div class="buttons">
-    <a class="btn secondary" href="mailto:andradekayky99@gmail.com">Enviar e-mail ↗</a>
-    <a class="btn secondary" href="https://www.linkedin.com/in/kayky-andrade-8791522ba/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-  </div>
-</div>
+    <a class="btn secondary" href="mailto:andradekayky99@gmail.com">
+      Enviar e-mail ↗
+    </a>
 
+    <a class="btn secondary"
+       href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
+       target="_blank"
+       rel="noopener noreferrer">
+       LinkedIn ↗
+    </a>
+  </div>
+
+</div>
 </div>
 </section>
 
 </main>
 
+<!-- RODAPÉ -->
+
 <footer>
 <div class="wrap footer-row">
+
   <span>© <span id="year">2026</span> Kayky Andrade de Souza</span>
 
   <div class="footer-links">
@@ -794,10 +1053,13 @@ footer {
 
     <a href="https://www.linkedin.com/in/kayky-andrade-8791522ba/"
        target="_blank"
-       rel="noopener noreferrer">LinkedIn</a>
+       rel="noopener noreferrer">
+       LinkedIn
+    </a>
   </div>
 
-  <span>Infraestrutura de TI · Suporte Técnico · Cloud Computing</span>
+  <span>Suporte Técnico · Infraestrutura · Desenvolvimento Web · Automação</span>
+
 </div>
 </footer>
 
